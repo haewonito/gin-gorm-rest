@@ -14,5 +14,9 @@ func main() {
 		//connect database
 	config.Connect()
 	routes.UserRoute(router)
+	routes.SongRoute(router)
+	routes.AlbumRoute(router)
+	routes.AlbumSongRoute(router)
+
 	router.Run(":8080")
 }

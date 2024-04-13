@@ -12,6 +12,6 @@ func Connect() {
 	if err != nil {
 		panic(err)
 	}
-	db.AutoMigrate(&models.User{})
+	db.AutoMigrate(&models.User{}, &models.Album{}, &models.Song{})
 	DB = db
 }
