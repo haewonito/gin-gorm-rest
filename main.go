@@ -1,3 +1,5 @@
+//tutorial: https://www.youtube.com/watch?v=ZI6HaPKHYsg
+
 package main
 
 import (

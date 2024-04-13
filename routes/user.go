@@ -5,5 +5,9 @@ import( "github.com/gin-gonic/gin"
 )
 
 func UserRoute(router *gin.Engine) {
-	router.GET("/", controller.UserController)
+	router.GET("/users", controller.GetUsers)
+	router.POST("/users", controller.CreateUser)
+	router.GET("/users/:id", controller.GetUserById)
+	router.DELETE("/users/:id", controller.DeleteUser)
+	router.PUT("/users/:id", controller.UpdateUser)
 }
