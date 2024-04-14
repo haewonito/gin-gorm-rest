@@ -13,6 +13,8 @@ func GetAlbums(c *gin.Context) {
 	c.JSON(200, &albums)
 }
 
+
+
 func CreateAlbum(c *gin.Context) {
 	var album models.Album
 	c.BindJSON(&album)
